@@ -1,0 +1,41 @@
+@import "../vars";
+@import "../libs";
+
+.categories {
+  @apply overflow-auto;
+
+  flex: 1;
+  max-width: 80%;
+
+  @media (max-width: 768px) {
+    @apply max-w-full mb-8;
+
+  }
+
+  ul {
+    @apply flex;
+
+    li {
+      @apply py-3.5 px-8 mr-2.5 font-bold cursor-pointer;
+
+      background-color: #f9f9f9;
+      border-radius: 30px;
+      transition: background-color 0.1s ease-in-out;
+      @include noSelect();
+
+      &:hover {
+        background-color: darken(#f9f9f9, 2%);
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 5%);
+      }
+
+      &.active {
+        @apply text-white;
+
+        background-color: #282828;
+      }
+    }
+  }
+}

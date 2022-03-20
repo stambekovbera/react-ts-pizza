@@ -1,0 +1,39 @@
+@import '../vars';
+
+.header {
+  @apply py-10;
+
+  border-bottom: 1px solid $gray-line;
+
+  .container {
+    @apply flex items-center justify-between;
+
+    @media (max-width: 768px) {
+      @apply flex-col;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__cart {
+      @apply mt-8;
+    }
+  }
+
+  &__logo {
+    @apply flex;
+
+    img {
+      @apply mr-4;
+    }
+
+    h1 {
+      @apply text-2xl uppercase font-extrabold;
+
+      color: #181818;
+    }
+
+    p {
+      color: #7b7b7b;
+    }
+  }
+}

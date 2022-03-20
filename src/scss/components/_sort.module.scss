@@ -1,0 +1,59 @@
+@import "../vars";
+
+.sort {
+  @apply relative ml-5;
+
+  &__label {
+    @apply flex items-center;
+
+    svg {
+      @apply mr-2 rotate-180;
+
+      &.rotated {
+        @apply rotate-0;
+      }
+    }
+
+    b {
+      @apply mr-2;
+    }
+
+    span {
+      @apply cursor-pointer;
+
+      color: $orange;
+      border-bottom: 1px dashed $orange;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+
+    ul {
+      overflow: hidden;
+
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $orange;
+        }
+      }
+    }
+  }
+}
