@@ -16,7 +16,7 @@
 
 Дизайн и верстка взяты у Archakov Blog (https://www.youtube.com/channel/UCdldbhAwO16vjnDwACTs5gQ).
 
-Стек технологий:
+## Стек технологий:
     React
     TypeScript
     Redux
