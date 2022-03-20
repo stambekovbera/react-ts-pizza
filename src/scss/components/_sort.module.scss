@@ -27,22 +27,16 @@
   }
 
   &__popup {
-    position: absolute;
-    right: 0;
-    margin-top: 15px;
-    background: #ffffff;
+    @apply absolute right-0 mt-3.5 bg-white overflow-hidden py-2.5 px-0 w-40;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
     border-radius: 10px;
-    overflow: hidden;
-    padding: 10px 0;
-    width: 160px;
 
     ul {
+      @apply overflow-hidden;
       overflow: hidden;
 
       li {
-        padding: 12px 20px;
-        cursor: pointer;
+        @apply py-3 px-5 cursor-pointer;
 
         &.active,
         &:hover {
@@ -50,7 +44,7 @@
         }
 
         &.active {
-          font-weight: bold;
+          @apply font-bold;
           color: $orange;
         }
       }
