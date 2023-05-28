@@ -26,7 +26,7 @@
     React
     TypeScript
     Redux
-    Redux Thunk (для мидлваров)
+    Redux Thunk (для асинк)
     Redux Persist (для сохранения состояния в локальное хранилище)
     Axios (для запроса на фейковый сервер)
     JSON-Server (для фейкового сервера)
